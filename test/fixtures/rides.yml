@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ride_name: MyString
+  date: 2017-03-22
+  milage: 1
+  start_info: MyText
+  description: MyText
+
+two:
+  ride_name: MyString
+  date: 2017-03-22
+  milage: 1
+  start_info: MyText
+  description: MyText

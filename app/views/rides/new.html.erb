@@ -1,0 +1,21 @@
+<h1>rides/new</h1>
+<p style="color:red"><%= @ride.errors.full_messages if @ride.errors.any? %></p>
+
+<%= form_for(@ride) do |f| %>
+  <%= f.label :ride_name %>
+  <%= f.text_field :ride_name %>
+
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+
+  <%= f.label :mileage %>
+  <%= f.number_field :milage %>
+
+  <%= f.label :start_info, :start_info %>
+  <%= f.text_field :start_info %>
+
+  <%= f.label :description, :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit %>
+<% end %>

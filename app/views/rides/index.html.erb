@@ -1,0 +1,17 @@
+<% @rides.each do |ride| %>
+
+  <p>Ride Name: <%= ride.ride_name %></p>
+  <p>Date: <%= ride.date %></p>
+  <p>Milage: <%= ride.milage %></p>
+
+  <% if logged_in? && current_user.status == "active" %>
+  <p>Start Info: <%= ride.start_info %></p>
+  <% else %>
+  <p>Log in for start info </p>
+  <% end %>
+
+  <p>Description: <%= ride.description %></p>
+  <%= link_to ride.ride_name, ride_path(ride) %>
+  <br><br>
+
+<% end %>
